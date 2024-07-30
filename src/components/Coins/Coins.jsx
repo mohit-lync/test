@@ -14,21 +14,21 @@ const Card = () => {
     const [searchInput, setSearchInput] = useState('');
 
    
-    const fetchData = async () => {
-        try {
-            const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&page=${page}`);
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            const result = await response.json();
-            setData(result);
-            setLoading(false);
-        } catch (err) {
-            setError('We are facing some issue. Please check again after some time.');
-            setLoading(false);
-        }
-    };
     useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&page=${page}`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const result = await response.json();
+                setData(result);
+                setLoading(false);
+            } catch (err) {
+                setError('We are facing some issue. Please check again after some time.');
+                setLoading(false);
+            }
+        };
         fetchData();
     }, [currency, page]); 
 
