@@ -1,0 +1,118 @@
+.exchanges-container{
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ gap:6rem;
+ height: 100vh;
+ position: relative;
+ top:70px;
+}
+.all-cards{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4rem;
+
+}
+.exchange-item {
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 2em;
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px #00000026, 0 4px 6px -2px #0000000d;
+    outline: 1px solid #0000000d;
+    transition: transform 250ms linear, outline 250ms linear;
+    height: 170px;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    gap:1rem;
+    padding: 2rem;
+}
+.all-3{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.exchange-item:hover{
+    border: 1px solid black;
+transform: scale(1.1) ;
+transition: transform 0.3s ease;
+}
+.exchange-item:hover .exchange-ranking{
+    background-color: black;
+    color: white;
+}
+.exchange-ranking {
+   border-radius: 50% ;
+   border:1.5px solid black;
+   position: absolute;
+   top:1rem;
+   left:1rem;
+   height: 2rem;
+   width: 2rem;
+   display: grid;
+   place-content: center;
+}
+
+.exchange-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.footer-btn button{
+    font-size: 1rem;
+    height:3rem ;
+    width: 13rem;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+    
+}
+.footer-btn button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1) ;
+transition: transform 0.3s ease-out;
+}
+.exchange-name {
+    font-size: 1.2rem;
+}
+
+.exchange-link img {
+    width: 25px;
+    height: 25px;
+}
+.headings{
+   display: grid;
+   width: 100%;
+   place-content: center;
+   
+}
+.headings h1{
+    width: max-content;
+    border-bottom: 1px solid black ;
+    font-weight: 500;
+}
+.exchange-error-msg{
+    text-align: center;
+    font-size: 3rem;
+    position:absolute;
+    margin: 30% 30%;
+}
+@media only screen and (max-width: 1000px) {
+    .exchanges-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 100vh;
+        overflow: visible; 
+    }
+}

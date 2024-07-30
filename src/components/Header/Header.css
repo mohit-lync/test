@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width:100%;
+    border-bottom: 0.2px solid rgb(97, 94, 94); 
+    background-color: #000000d9;
+    z-index: 2;
+    position: fixed;
+    
+}
+.items a{
+    color:rgb(223, 219, 219);
+    text-decoration: none;
+}
+.items a:hover{
+    color: white;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap:2rem;
+    color: rgb(233, 224, 224);
+    
+}

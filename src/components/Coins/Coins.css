@@ -1,0 +1,157 @@
+
+.crypto-container{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:2rem;
+text-align: center;
+position: relative;
+top:70px;
+
+} 
+.page-heading h1{
+    font-weight:normal;
+    border-bottom: 1px solid black;
+}
+.actions-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+   
+    width: 100%;
+}
+.currency-changebtns-container{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    
+}
+
+.coins-card-container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5rem;
+}
+.coins-card{
+    height: 220px;
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow:0 10px 15px -3px #00000026, 0 4px 6px -2px #0000000d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:0.3rem;
+    padding: 2rem;
+} 
+.coins-card:hover{
+    transform:scale(1.1);
+    transition: 0.3s ease linear;
+}
+img{
+    height: 80px;
+    width:80px;
+}
+.price-change-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+}
+.pagination-btns{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.pagination-btns button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    height: 3rem;
+    width: 13rem;
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.pagination-btns button:hover{
+    background-color: black;
+    color: white;
+}
+
+.search-container{
+    height: 2rem;
+    width: 20rem;
+    display:flex;
+}
+.input-search-field{
+   height: 2rem;
+   width: 16rem;
+   padding:0.5rem;
+}
+.search-icon{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.search-container button{
+    height: 2rem;
+    width: 3rem;
+    border: 1px solid black;
+    padding: none;
+    position:relative;
+    top:0px;
+    background-color: white;
+}
+.search-container button:hover{
+    color: white;
+    transform: scale(1.1) ;
+transition: transform 0.3s ease-out;
+}
+
+.name-symbol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0px;
+    height:80px ;
+}
+.coin-name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.arrow-img{
+    height: 23px;
+    width: 23px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .actions-container{
+        flex-direction: column;
+        gap:1rem;
+    }
+    .crypto-container{
+        overflow: visible;
+        overflow-x: visible;
+
+    }
+    .coins-card-container{
+        flex-direction: column;
+    }
+    .pagination-btns{
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+    }
+}
+
